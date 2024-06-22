@@ -4,9 +4,9 @@ services:
   deeplx:
     image: ghcr.io/owo-network/deeplx:latest
     restart: always
-    ports:
-      - "1188:1188"
-    # environment:
-      # - TOKEN=helloworld
+    expose:
+      - 1188
+     environment:
+       - TOKEN=helloworld
       # - AUTHKEY=xxxxxxx:fx
       # - DL_SESSION=xxxxxx
