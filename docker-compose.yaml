@@ -5,6 +5,4 @@ services:
     image: ghcr.io/owo-network/deeplx:latest
     restart: always
     expose:
-      - "1188"
-     environment:
-       - TOKEN=helloworld
+      - 1188
